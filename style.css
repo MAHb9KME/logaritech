@@ -74,11 +74,15 @@ main {
 
 .title {
     color: #0C0B0B;
-    font-weight: 500;
-    font-size: 32px;
+    font-size: 72px;
+    font-weight: 600;
     line-height: 130%;
-    letter-spacing: -0.02em;
-    margin: 0px 0px 40px 0px;
+    letter-spacing: -7%;;
+    margin: 0px 0px 57px 0px;
+}
+
+.title strong {
+    color: #EF7D00;
 }
 
 h1,
@@ -144,11 +148,16 @@ h6 a,
 
 .container {
     width:100%;
-    max-width:1278px;
+    max-width:1810px;
     margin:0 auto;
-    padding:0 24px;
+    padding:0 25px;
     box-sizing:border-box;
     position: relative;
+}
+
+.main__distance {
+    padding: 120px 0;
+    border-bottom: 1px solid rgb(237, 237, 237);
 }
 
 .overflow {
@@ -243,6 +252,11 @@ textarea{
 button,
 input { 
     overflow: visible;
+}
+
+button {
+    background: initial;
+    cursor: pointer;
 }
 
 button::-moz-focus-inner,
@@ -776,6 +790,119 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
 /************** logaritech **************/
 
 
+/* Общие блоки START */
+.split__side-tlt {
+    color: rgb(165, 170, 180);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -6%;
+    text-transform: uppercase;
+}
+.split__cont-tlt {
+    text-indent: 137px;
+}
+.split__text {
+    margin-bottom: 80px;
+}
+.split__text--active .split__drop {
+    max-height: 9999px;
+}
+.split__text p {
+    color: rgb(55, 63, 82);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -7%;
+    margin: 0px 0px 32px 0px;
+}
+.split__text p:last-child {
+    margin-bottom: 0;
+}
+.split__image {
+}
+.split__image picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 55.173%;
+}
+.split__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.split__drop {
+    font-family: 'Inter';
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.split__button {
+    color: rgb(20, 33, 61);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -6%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.split__button::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+
+    background-image: url(images/icons/icon-details.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+
+
+/* Слайдер Стрелки START */
+.slick-arrows {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 60px;
+}
+.slick-arrows__item {
+    display: block;
+    width: 72px;
+    min-width: 72px;
+    height: 72px;
+    background: initial;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+    border: 3px dashed rgb(237, 237, 237);
+
+    background-image: url(images/icons/slider-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+
+}
+.slick-arrows__prev {
+}
+.slick-arrows__next {
+    transform: rotate(-180deg);
+}
+
+
+/* Общие блоки END */
+
+
 .header {
     position: absolute;
     top:0;
@@ -847,8 +974,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     position: relative;
     padding-top: 141px;
     
-    height: 960px;
-    min-height: 960px;
+    min-height: 768px;
 }
 
 /*@media screen and (max-width:1700px){
@@ -963,7 +1089,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     width: 16px;
     height: 22px;
 
-    background-image: url(images/pics/scroll-down.svg);
+    background-image: url(images/icons/scroll-down.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1013,5 +1139,471 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     margin: 0;
 }
 .hero-section__title strong {
+    color: #fff;
     font-weight: 600;
 }
+
+
+/* О комании START */
+.about {
+}
+.about__inner {
+}
+.split {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.split__side {
+    flex: 0 1 560px;
+}
+.split__cont {
+    flex: 0 1 1160px;
+}
+
+.about__side {
+}
+.about__content {
+}
+/* О комании END */
+
+
+
+
+/* Наши услуги START */
+.services {
+}
+.services__inner {
+}
+.services__title {
+    margin-bottom: 80px;
+}
+.services__slider {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.services__slider .slick-track {
+    display: flex !important;
+    justify-content: flex-start;
+    margin: 0 -20px;
+}
+.services__slider .slick-list {
+    margin-right: -80px;
+}
+.services__item {
+    min-width: 560px;
+    margin: 0 20px;
+}
+.services__item.slick-current {
+    min-width: 860px;
+} 
+.services__image {
+    margin-bottom: 40px;
+}
+.services__image picture {
+    display: block;
+    height: 526px;
+    position: relative;
+}
+.services__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services__tlt {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(20, 33, 61);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -7%;
+    position: relative;
+    transition: .2s color;
+}
+.services__tlt::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    background-color: #EF7D00;
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: -16px;
+    z-index: 1;
+}
+.services__item:hover .services__tlt {
+    color: #EF7D00;
+}
+/* Наши услуги END */
+
+
+
+
+/* Команда START */
+.team {}
+.team__inner {}
+.team--cont-tlt {
+    text-indent: 0;
+}
+.team--drop {
+    max-height: 111px;
+}
+/* Команда END */
+
+
+/* Струкутура START */
+.structure {
+}
+.structure__inner {
+}
+.structure__head {
+    margin-bottom: 80px;
+}
+.structure__title {
+    margin-bottom: 80px;
+}
+.structure__subtitle {
+    color: rgb(55, 63, 82);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -7%;
+
+    max-width: 841px;
+}
+.structure__body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: -40px -20px;
+}
+.structure__item {
+    width: calc(100% / 2 - 40px);
+    margin: 40px 20px;
+}
+.structure__image {
+    margin-bottom: 40px;
+}
+.structure__image picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 80%;
+}
+.structure__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.structure__tltle {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(20, 33, 61);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -7%;
+    position: relative;
+    transition: .2s color;
+}
+.structure__item:hover .structure__tltle {
+    color: #EF7D00;
+}
+.structure__tltle::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    background-color: #EF7D00;
+
+    position: absolute;
+    top:10px;
+    left: auto;
+    right: -16px;
+    z-index: 1;
+}
+/* Струкутура END */
+
+/* География проектов START */
+.geography {
+    position: relative;
+    min-height: 1203px;
+}
+.geography__inner {
+    position: relative;
+    z-index: 2;
+}
+.geography--cont-tlt {
+    text-indent: initial;
+}
+.geography__bg {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.geography__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* География проектов END */
+
+/* Достижения START */
+.achievements {
+}
+.achievements__inner {
+}
+.achievements__head {
+    margin-bottom: 80px;
+}
+.achievements__title {
+    text-indent: 104px;
+    margin-bottom: 10px;
+}
+.achievements__subtitle {
+    color: rgb(55, 63, 82);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -7%;
+}
+.achievements__body {
+}
+.achievements__image {
+}
+.achievements__image picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 40.9099%;
+}
+.achievements__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Достижения END */
+
+/* Footer START */
+.footer {
+}
+.footer__inner {
+}
+.footer__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 120px 0;
+}
+.footer__title {
+    flex: 0 1 1091px;
+    flex: 0 1 1251px;
+    text-indent: 124px;
+    margin-bottom: 0;
+}
+.footer__pick {
+    display: block;
+    flex: 0 0 120px;
+    height: 120px;
+
+    border: 2px dashed rgb(237, 237, 237);
+    border-radius: 50%;
+
+    background-image: url(images/icons/arrow-top.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 32px;
+    transition: .2s all;
+
+}
+.footer__pick:hover {
+    border: 2px dashed #EF7D00;
+}
+.footer__body {
+    padding: 120px 0;
+}
+.footer-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 190px;
+}
+.footer-body__side {
+}
+.footer--side {
+    flex: 0 1 410px;
+}
+.footer-body__logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px;
+    margin-bottom: 64px;
+}
+.footer-body__subtext {
+    color: rgb(55, 63, 82);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -7%;
+    margin-bottom: 64px;
+}
+.footer-body__docs {
+    padding: 0;
+    margin: 0;
+}
+.footer-body__doc {
+    list-style-type: none;
+}
+.footer-body__xlink {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(20, 33, 61);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -4%;
+    text-decoration-line: underline;
+    border-bottom: 1px solid;
+    transition: .2s all;
+    text-decoration: none;
+}
+.footer-body__xlink:hover {
+    border-bottom: 1px solid transparent;
+}
+.footer-body__cont {
+}
+.footer--cont {
+    flex: 0 1 557px
+}
+.footer-body__phone {
+    margin: 0px 0px 64px 0px;
+}
+.footer-body__tel {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(20, 33, 61);
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -7%;
+    white-space: nowrap;
+}
+.footer-body__info {
+    margin: 0px 0px 54px 0px;
+}
+.footer-body__location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin: 0px 0px 40px 0px;
+}
+.footer-body__city {
+    color: rgb(20, 33, 61);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -7%;
+}
+.footer-body__mail {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(20, 33, 61);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -7%;
+}
+.footer-body__schedule {
+    color: rgb(55, 63, 82);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -7%;
+}
+.footer-body__menu {
+}
+.footer-body__ul {
+    padding: 0;
+    margin: 0;
+}
+.footer-body__li {
+    list-style-type: none;
+}
+.footer-body__li:not(:last-child) {
+    margin-bottom: 22px;
+}
+.footer-body__link {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(20, 33, 61);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -6%;
+}
+.footer-body__link:hover {
+    color: #EF7D00;
+}
+.footer__copyright {
+    padding-bottom: 64px;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 190px;
+}
+.footer-copyright__ltd {
+    color: rgb(20, 33, 61);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -4%;
+}
+.footer-copyright__xsite {
+    color: rgb(20, 33, 61);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -6%;
+}
+.footer-copyright__xsite a {
+    color: inherit !important;
+    transition: .2s color;
+}
+.footer-copyright__xsite a:hover {
+    color: #EF7D00 !important;
+}
+/* Footer END */

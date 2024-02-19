@@ -363,6 +363,44 @@ $(function(){
 	}, 300);
 
 
+	// Выпадающий текст Узнать подробнее
+	$(document).on('click', '.split__button', function() 
+	{ 
+		parent = $(this).parents('.split__text') 
+		if( $(parent).hasClass('split__text--active') ) {
+			$(parent).removeClass('split__text--active') 
+			$(this).text('Узнать подробности')
+		}
+		else {
+			$(parent).addClass('split__text--active')
+			$(this).text('Свернуть')
+		}
+	}) 
+
+
+	// Слайдер Наши услуги
+	$('.services__slider').slick({
+  		slidesToShow: 3,
+  		slidesToScroll: 1,
+		arrows: true,
+		infinite: false,
+		touchMove: false,
+		swipe: false,
+
+		appendArrows: $('#services__arrows'),
+	    prevArrow: '<button class="slick-arrows__item slick-arrows__prev"></button>',
+	    nextArrow: '<button class="slick-arrows__item slick-arrows__next"></button>',
+  		responsive: [
+		{
+		    breakpoint: 700,
+		    settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		}]
+	});
+
+
 
 })
 	

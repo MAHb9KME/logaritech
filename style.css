@@ -77,12 +77,13 @@ main {
     font-size: 72px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -7%;;
+    letter-spacing: -0.07em;;
     margin: 0px 0px 57px 0px;
 }
 
 .title strong {
     color: #EF7D00;
+    font-weight: 600;
 }
 
 h1,
@@ -796,7 +797,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 14px;
     font-weight: 700;
     line-height: 130%;
-    letter-spacing: -6%;
+    letter-spacing: -0.06em;
     text-transform: uppercase;
 }
 .split__cont-tlt {
@@ -813,7 +814,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 20px;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
     margin: 0px 0px 32px 0px;
 }
 .split__text p:last-child {
@@ -846,11 +847,16 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
-    letter-spacing: -6%;
+    letter-spacing: -0.06em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 12px;
+    padding: 0;
+    transition: .2s all;
+}
+.split__button:hover {
+    color: #EF7D00;
 }
 .split__button::after {
     content: '';
@@ -963,7 +969,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 24px;
     font-weight: 700;
     line-height: 33px;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     text-align: center;
 }
 
@@ -1034,13 +1040,13 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
 
 .hero-section__inner {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     position: relative;
     z-index: 5;
     height: 100%;
 }
 .hero-section__aside {
-    flex: 0 0 373px;
+    flex: 0 0 409px;
 }
 .hero-aside {
     display: flex;
@@ -1054,7 +1060,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    padding: 100px 0px 0px 76px;
+    padding: 124px 0px 0px 76px;
     height: 100%;
 }
 .hero-aside__text {
@@ -1062,7 +1068,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 14px;
     font-weight: 500;
     line-height: 180%;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     margin-bottom: 40px;
     opacity: 0.8;
 }
@@ -1071,7 +1077,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 10px;
     font-weight: 800;
     line-height: 14px;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     text-align: left;
     text-transform: uppercase;
     position: relative;
@@ -1108,8 +1114,11 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     padding: 51px 50px 51px 76px;
 
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-right: 16px solid #ef7d00;
+    /*border-right: 16px solid #ef7d00;*/
     /*backdrop-filter: blur(9px);*/
+
+    width: 100%;
+    max-width: 373px;
 }
 .hero-aside__btn span {
     display: inline-block;
@@ -1118,7 +1127,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 16px;
     font-weight: 800;
     line-height: 22px;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     white-space: nowrap;
 }
 .hero-aside__btn svg {
@@ -1126,14 +1135,14 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     min-width: 16px;
 }
 .hero-section__content {
-    padding: 100px 66px 100px 146px;
-    flex-shrink: 1;
+    padding: 110px 66px 100px;
+    flex: 0 1 1298px;
 }
 .hero-section__title {
     color: #fff;
-    font-size: 100px;
+    font-size: 94px;
     line-height: 120%;
-    letter-spacing: -4%;
+    letter-spacing: -0.07em;
     text-align: left;
     font-weight: 100;
     margin: 0;
@@ -1223,7 +1232,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 40px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
     position: relative;
     transition: .2s color;
 }
@@ -1255,7 +1264,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     text-indent: 0;
 }
 .team--drop {
-    max-height: 111px;
+    max-height: 125px;
 }
 /* Команда END */
 
@@ -1277,7 +1286,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 20px;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
 
     max-width: 841px;
 }
@@ -1299,7 +1308,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     display: block;
     position: relative;
     width: 100%;
-    padding-top: 80%;
+    padding-top: 61.164%;
 }
 .structure__img {
     position: absolute;
@@ -1317,7 +1326,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 40px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
     position: relative;
     transition: .2s color;
 }
@@ -1343,7 +1352,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
 /* География проектов START */
 .geography {
     position: relative;
-    min-height: 1203px;
+    padding-bottom: 0;
 }
 .geography__inner {
     position: relative;
@@ -1353,21 +1362,12 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     text-indent: initial;
 }
 .geography__bg {
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+    width: 100%;
 }
 .geography__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 1920px;
 }
 /* География проектов END */
 
@@ -1389,7 +1389,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 20px;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
 }
 .achievements__body {
 }
@@ -1426,7 +1426,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
 }
 .footer__title {
     flex: 0 1 1091px;
-    flex: 0 1 1251px;
+    flex: 0 1 1171px;
     text-indent: 124px;
     margin-bottom: 0;
 }
@@ -1474,7 +1474,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 18px;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
     margin-bottom: 64px;
 }
 .footer-body__docs {
@@ -1491,7 +1491,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 18px;
     font-weight: 600;
     line-height: 100%;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     text-decoration-line: underline;
     border-bottom: 1px solid;
     transition: .2s all;
@@ -1515,7 +1515,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 72px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
     white-space: nowrap;
 }
 .footer-body__info {
@@ -1533,7 +1533,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 32px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
 }
 .footer-body__mail {
     display: inline-block;
@@ -1542,7 +1542,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 32px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
 }
 .footer-body__schedule {
     color: rgb(55, 63, 82);
@@ -1550,7 +1550,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 20px;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: -7%;
+    letter-spacing: -0.07em;
 }
 .footer-body__menu {
 }
@@ -1571,7 +1571,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 18px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -6%;
+    letter-spacing: -0.06em;
 }
 .footer-body__link:hover {
     color: #EF7D00;
@@ -1590,14 +1590,14 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     font-size: 16px;
     font-weight: 500;
     line-height: 130%;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
 }
 .footer-copyright__xsite {
     color: rgb(20, 33, 61);
     font-size: 16px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: -6%;
+    letter-spacing: -0.06em;
 }
 .footer-copyright__xsite a {
     color: inherit !important;

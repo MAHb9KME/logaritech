@@ -364,7 +364,7 @@ $(function(){
 
 
 	// Выпадающий текст Узнать подробнее
-	$(document).on('click', '.split__button', function() 
+	/*$(document).on('click', '.split__button', function() 
 	{ 
 		parent = $(this).parents('.split__text') 
 		if( $(parent).hasClass('split__text--active') ) {
@@ -375,7 +375,7 @@ $(function(){
 			$(parent).addClass('split__text--active')
 			$(this).text('Свернуть')
 		}
-	}) 
+	})*/ 
 
 
 	// Слайдер Наши услуги
@@ -383,7 +383,7 @@ $(function(){
   		slidesToShow: 3,
   		slidesToScroll: 1,
 		arrows: true,
-		infinite: false,
+		infinite: true,
 		touchMove: false,
 		swipe: false,
 
